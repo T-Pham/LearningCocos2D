@@ -22,8 +22,27 @@
             [vikingSprite setScaleX:screenSize.width/1024.0f];
             [vikingSprite setScaleY:screenSize.height/768.0f];
         }
+
+        [self initJoystickAndButtons];
+        [self scheduleUpdate];
     }
     return self;
+}
+
+- (void)applyJoystick:(SneakyJoystick *)aJoystick toNode:(CCNode *)tempNode forTimeDelta:(float)deltaTime {
+    CGPoint scaledVelocity = ccpMult(aJoystick.velocity, 1024.f);
+    CGPoint newPosition = ccp(tempNode.position.x + scaledVelocity.x * deltaTime, tempNode.position.y + scaledVelocity.y * deltaTime);
+    [tempNode setPosition:newPosition];
+    if (jumpButton.active) {
+        CCLOG(@"Jump button is pressed.");
+    }
+    if (attackButton.active) {
+        CCLOG(@"Attack button is pressed.");
+    }
+}
+
+- (void)update:(ccTime)delta {
+    [self applyJoystick:leftJoystick toNode:vikingSprite forTimeDelta:delta];
 }
 
 - (void)initJoystickAndButtons {
