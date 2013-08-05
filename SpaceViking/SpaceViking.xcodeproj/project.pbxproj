@@ -167,6 +167,9 @@
 		9792B6D217AF96E2007EEC41 /* jumpUp-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 9792B6AE17AF96E2007EEC41 /* jumpUp-hd.png */; };
 		9792B6D317AF96E2007EEC41 /* jumpUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 9792B6AF17AF96E2007EEC41 /* jumpUp.png */; };
 		9792B6D417AF96E2007EEC41 /* sv_anim_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9792B6B017AF96E2007EEC41 /* sv_anim_1.png */; };
+		9792B6D717AF9C44007EEC41 /* BackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9792B6D617AF9C44007EEC41 /* BackgroundLayer.m */; };
+		9792B6DA17AF9FB0007EEC41 /* GameplayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9792B6D917AF9FB0007EEC41 /* GameplayLayer.m */; };
+		9792B6DD17AFA119007EEC41 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9792B6DC17AFA119007EEC41 /* GameScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -477,6 +480,12 @@
 		9792B6AE17AF96E2007EEC41 /* jumpUp-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jumpUp-hd.png"; sourceTree = "<group>"; };
 		9792B6AF17AF96E2007EEC41 /* jumpUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jumpUp.png; sourceTree = "<group>"; };
 		9792B6B017AF96E2007EEC41 /* sv_anim_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sv_anim_1.png; sourceTree = "<group>"; };
+		9792B6D517AF9C44007EEC41 /* BackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundLayer.h; sourceTree = "<group>"; };
+		9792B6D617AF9C44007EEC41 /* BackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundLayer.m; sourceTree = "<group>"; };
+		9792B6D817AF9FB0007EEC41 /* GameplayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayLayer.h; sourceTree = "<group>"; };
+		9792B6D917AF9FB0007EEC41 /* GameplayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameplayLayer.m; sourceTree = "<group>"; };
+		9792B6DB17AFA119007EEC41 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		9792B6DC17AFA119007EEC41 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -543,6 +552,12 @@
 				9792B67A17AF95C8007EEC41 /* HelloWorldLayer.m */,
 				9792B67C17AF95C8007EEC41 /* IntroLayer.h */,
 				9792B67D17AF95C8007EEC41 /* IntroLayer.m */,
+				9792B6D517AF9C44007EEC41 /* BackgroundLayer.h */,
+				9792B6D617AF9C44007EEC41 /* BackgroundLayer.m */,
+				9792B6D817AF9FB0007EEC41 /* GameplayLayer.h */,
+				9792B6D917AF9FB0007EEC41 /* GameplayLayer.m */,
+				9792B6DB17AFA119007EEC41 /* GameScene.h */,
+				9792B6DC17AFA119007EEC41 /* GameScene.m */,
 				9792B4E617AF95C2007EEC41 /* Resources */,
 				9792B4FE17AF95C2007EEC41 /* libs */,
 				9792B67217AF95C8007EEC41 /* Supporting Files */,
@@ -1240,6 +1255,9 @@
 				9792B67817AF95C8007EEC41 /* AppDelegate.m in Sources */,
 				9792B67B17AF95C8007EEC41 /* HelloWorldLayer.m in Sources */,
 				9792B67E17AF95C8007EEC41 /* IntroLayer.m in Sources */,
+				9792B6D717AF9C44007EEC41 /* BackgroundLayer.m in Sources */,
+				9792B6DA17AF9FB0007EEC41 /* GameplayLayer.m in Sources */,
+				9792B6DD17AFA119007EEC41 /* GameScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
