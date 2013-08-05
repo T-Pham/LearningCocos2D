@@ -141,6 +141,7 @@
 		9792B04017AF5E02007EEC41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9792B03F17AF5E02007EEC41 /* AppDelegate.m */; };
 		9792B04317AF5E02007EEC41 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9792B04217AF5E02007EEC41 /* HelloWorldLayer.m */; };
 		9792B04617AF5E02007EEC41 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9792B04517AF5E02007EEC41 /* IntroLayer.m */; };
+		9792B04E17AF611F007EEC41 /* SpaceCargoShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 9792B04D17AF611F007EEC41 /* SpaceCargoShip.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -425,6 +426,7 @@
 		9792B04217AF5E02007EEC41 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		9792B04417AF5E02007EEC41 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		9792B04517AF5E02007EEC41 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		9792B04D17AF611F007EEC41 /* SpaceCargoShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceCargoShip.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -451,6 +453,7 @@
 		9792AE8D17AF5DFC007EEC41 = {
 			isa = PBXGroup;
 			children = (
+				9792B04C17AF611F007EEC41 /* SpaceCargoShip */,
 				9792AEAD17AF5DFC007EEC41 /* HelloWorld */,
 				9792AE9817AF5DFC007EEC41 /* Frameworks */,
 				9792AE9717AF5DFC007EEC41 /* Products */,
@@ -879,6 +882,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9792B04C17AF611F007EEC41 /* SpaceCargoShip */ = {
+			isa = PBXGroup;
+			children = (
+				9792B04D17AF611F007EEC41 /* SpaceCargoShip.png */,
+			);
+			path = SpaceCargoShip;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -942,6 +953,7 @@
 				9792AEC217AF5DFD007EEC41 /* Icon@2x.png in Resources */,
 				9792AEC517AF5DFD007EEC41 /* iTunesArtwork in Resources */,
 				9792B01E17AF5E01007EEC41 /* ChangeLog in Resources */,
+				9792B04E17AF611F007EEC41 /* SpaceCargoShip.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
