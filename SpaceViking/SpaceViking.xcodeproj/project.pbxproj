@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		971E947517AFA90F00A1CD27 /* ColoredCircleSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 971E946917AFA90F00A1CD27 /* ColoredCircleSprite.m */; };
+		971E947617AFA90F00A1CD27 /* ColoredSquareSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 971E946B17AFA90F00A1CD27 /* ColoredSquareSprite.m */; };
+		971E947717AFA90F00A1CD27 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 971E946C17AFA90F00A1CD27 /* LICENSE */; };
+		971E947817AFA90F00A1CD27 /* SneakyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 971E946E17AFA90F00A1CD27 /* SneakyButton.m */; };
+		971E947917AFA90F00A1CD27 /* SneakyButtonSkinnedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 971E947017AFA90F00A1CD27 /* SneakyButtonSkinnedBase.m */; };
+		971E947A17AFA90F00A1CD27 /* SneakyJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 971E947217AFA90F00A1CD27 /* SneakyJoystick.m */; };
+		971E947B17AFA90F00A1CD27 /* SneakyJoystickSkinnedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 971E947417AFA90F00A1CD27 /* SneakyJoystickSkinnedBase.m */; };
 		9792B4D217AF95C2007EEC41 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9792B4D117AF95C2007EEC41 /* QuartzCore.framework */; };
 		9792B4D417AF95C2007EEC41 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9792B4D317AF95C2007EEC41 /* OpenGLES.framework */; };
 		9792B4D617AF95C2007EEC41 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9792B4D517AF95C2007EEC41 /* OpenAL.framework */; };
@@ -173,6 +180,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		971E946817AFA90F00A1CD27 /* ColoredCircleSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoredCircleSprite.h; sourceTree = "<group>"; };
+		971E946917AFA90F00A1CD27 /* ColoredCircleSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoredCircleSprite.m; sourceTree = "<group>"; };
+		971E946A17AFA90F00A1CD27 /* ColoredSquareSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoredSquareSprite.h; sourceTree = "<group>"; };
+		971E946B17AFA90F00A1CD27 /* ColoredSquareSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoredSquareSprite.m; sourceTree = "<group>"; };
+		971E946C17AFA90F00A1CD27 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		971E946D17AFA90F00A1CD27 /* SneakyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyButton.h; sourceTree = "<group>"; };
+		971E946E17AFA90F00A1CD27 /* SneakyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SneakyButton.m; sourceTree = "<group>"; };
+		971E946F17AFA90F00A1CD27 /* SneakyButtonSkinnedBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyButtonSkinnedBase.h; sourceTree = "<group>"; };
+		971E947017AFA90F00A1CD27 /* SneakyButtonSkinnedBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SneakyButtonSkinnedBase.m; sourceTree = "<group>"; };
+		971E947117AFA90F00A1CD27 /* SneakyJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyJoystick.h; sourceTree = "<group>"; };
+		971E947217AFA90F00A1CD27 /* SneakyJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SneakyJoystick.m; sourceTree = "<group>"; };
+		971E947317AFA90F00A1CD27 /* SneakyJoystickSkinnedBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyJoystickSkinnedBase.h; sourceTree = "<group>"; };
+		971E947417AFA90F00A1CD27 /* SneakyJoystickSkinnedBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SneakyJoystickSkinnedBase.m; sourceTree = "<group>"; };
 		9792B4CE17AF95C2007EEC41 /* SpaceViking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceViking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9792B4D117AF95C2007EEC41 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9792B4D317AF95C2007EEC41 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -509,6 +529,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		971E946717AFA90F00A1CD27 /* JoystickClasses */ = {
+			isa = PBXGroup;
+			children = (
+				971E946817AFA90F00A1CD27 /* ColoredCircleSprite.h */,
+				971E946917AFA90F00A1CD27 /* ColoredCircleSprite.m */,
+				971E946A17AFA90F00A1CD27 /* ColoredSquareSprite.h */,
+				971E946B17AFA90F00A1CD27 /* ColoredSquareSprite.m */,
+				971E946C17AFA90F00A1CD27 /* LICENSE */,
+				971E946D17AFA90F00A1CD27 /* SneakyButton.h */,
+				971E946E17AFA90F00A1CD27 /* SneakyButton.m */,
+				971E946F17AFA90F00A1CD27 /* SneakyButtonSkinnedBase.h */,
+				971E947017AFA90F00A1CD27 /* SneakyButtonSkinnedBase.m */,
+				971E947117AFA90F00A1CD27 /* SneakyJoystick.h */,
+				971E947217AFA90F00A1CD27 /* SneakyJoystick.m */,
+				971E947317AFA90F00A1CD27 /* SneakyJoystickSkinnedBase.h */,
+				971E947417AFA90F00A1CD27 /* SneakyJoystickSkinnedBase.m */,
+			);
+			path = JoystickClasses;
+			sourceTree = "<group>";
+		};
 		9792B4C517AF95C2007EEC41 = {
 			isa = PBXGroup;
 			children = (
@@ -568,6 +608,7 @@
 		9792B4E617AF95C2007EEC41 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				971E946717AFA90F00A1CD27 /* JoystickClasses */,
 				9792B68417AF96E2007EEC41 /* Images */,
 				9792B4FB17AF95C2007EEC41 /* Info.plist */,
 				9792B4FC17AF95C2007EEC41 /* iTunesArtwork */,
@@ -1133,6 +1174,7 @@
 				9792B6D217AF96E2007EEC41 /* jumpUp-hd.png in Resources */,
 				9792B6D317AF96E2007EEC41 /* jumpUp.png in Resources */,
 				9792B6D417AF96E2007EEC41 /* sv_anim_1.png in Resources */,
+				971E947717AFA90F00A1CD27 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1258,6 +1300,12 @@
 				9792B6D717AF9C44007EEC41 /* BackgroundLayer.m in Sources */,
 				9792B6DA17AF9FB0007EEC41 /* GameplayLayer.m in Sources */,
 				9792B6DD17AFA119007EEC41 /* GameScene.m in Sources */,
+				971E947517AFA90F00A1CD27 /* ColoredCircleSprite.m in Sources */,
+				971E947617AFA90F00A1CD27 /* ColoredSquareSprite.m in Sources */,
+				971E947817AFA90F00A1CD27 /* SneakyButton.m in Sources */,
+				971E947917AFA90F00A1CD27 /* SneakyButtonSkinnedBase.m in Sources */,
+				971E947A17AFA90F00A1CD27 /* SneakyJoystick.m in Sources */,
+				971E947B17AFA90F00A1CD27 /* SneakyJoystickSkinnedBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
