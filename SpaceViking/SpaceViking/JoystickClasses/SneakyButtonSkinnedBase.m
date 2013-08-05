@@ -72,7 +72,7 @@
 
 - (void) setContentSize:(CGSize)s
 {
-	contentSize_ = s;
+	_contentSize = s;
 	defaultSprite.contentSize = s;
 	button.radius = s.width/2;
 }

@@ -13,7 +13,7 @@
 
 #import "cocos2d.h"
 
-@interface SneakyJoystick : CCNode <CCTargetedTouchDelegate> {
+@interface SneakyJoystick : CCNode <CCTouchOneByOneDelegate> {
 	CGPoint stickPosition;
 	float degrees;
 	CGPoint velocity;

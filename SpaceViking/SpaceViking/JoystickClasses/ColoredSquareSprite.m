@@ -68,17 +68,17 @@
 {
 	size_ = sz;
 	
-	squareVertices_[0] = position_.x - size_.width;
-	squareVertices_[1] = position_.y - size_.height;
+	squareVertices_[0] = _position.x - size_.width;
+	squareVertices_[1] = _position.y - size_.height;
 	
-	squareVertices_[2] = position_.x + size_.width;
-	squareVertices_[3] = position_.y - size_.height;
+	squareVertices_[2] = _position.x + size_.width;
+	squareVertices_[3] = _position.y - size_.height;
 	
-	squareVertices_[4] = position_.x - size_.width;
-	squareVertices_[5] = position_.y + size_.height;
+	squareVertices_[4] = _position.x - size_.width;
+	squareVertices_[5] = _position.y + size_.height;
 	
-	squareVertices_[6] = position_.x + size_.width;
-	squareVertices_[7] = position_.y + size_.height;
+	squareVertices_[6] = _position.x + size_.width;
+	squareVertices_[7] = _position.y + size_.height;
 	
 	[self updateContentSize];
 }
@@ -94,16 +94,17 @@
 }
 
 - (void)draw
-{		
+{
+    ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position | kCCVertexAttribFlag_Color );
 		// Default GL states: GL_TEXTURE_2D, GL_VERTEX_ARRAY, GL_COLOR_ARRAY, GL_TEXTURE_COORD_ARRAY
 		// Needed states: GL_VERTEX_ARRAY
 		// Unneeded states: GL_COLOR_ARRAY, GL_TEXTURE_2D, GL_TEXTURE_COORD_ARRAY
-	glDisableClientState(GL_TEXTURE_COORD_ARRAY);
-	glDisableClientState(GL_COLOR_ARRAY);
-	glDisable(GL_TEXTURE_2D);
+//	glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+//	glDisableClientState(GL_COLOR_ARRAY);
+//	glDisable(GL_TEXTURE_2D);
 	
-	glVertexPointer(2, GL_FLOAT, 0, squareVertices_);
-	glColor4f(color_.r/255.0f, color_.g/255.0f, color_.b/255.0f, opacity_/255.0f);
+//	glVertexPointer(2, GL_FLOAT, 0, squareVertices_);
+//	glColor4f(color_.r/255.0f, color_.g/255.0f, color_.b/255.0f, opacity_/255.0f);
 	
 	BOOL newBlend = NO;
 	if( blendFunc_.src != CC_BLEND_SRC || blendFunc_.dst != CC_BLEND_DST ) {
@@ -123,9 +124,9 @@
 		glBlendFunc(CC_BLEND_SRC, CC_BLEND_DST);
 	
 		// restore default GL state
-	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-	glEnableClientState(GL_COLOR_ARRAY);
-	glEnable(GL_TEXTURE_2D);
+//	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+//	glEnableClientState(GL_COLOR_ARRAY);
+//	glEnable(GL_TEXTURE_2D);
 }
 
 #pragma mark Protocols
@@ -151,7 +152,7 @@
 
 - (NSString*) description
 {
-	return [NSString stringWithFormat:@"<%@ = %08X | Tag = %i | Color = %02X%02X%02X%02X | Size = %f,%f>", [self class], self, tag_, color_.r, color_.g, color_.b, opacity_, size_.width, size_.height];
+	return [NSString stringWithFormat:@"<%@ = %08X | Tag = %i | Color = %02X%02X%02X%02X | Size = %f,%f>", [self class], self, _tag, color_.r, color_.g, color_.b, opacity_, size_.width, size_.height];
 }
 
 @end

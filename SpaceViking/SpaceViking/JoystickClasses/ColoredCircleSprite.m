@@ -73,8 +73,8 @@
 	
 	for(int i=0; i<numberOfSegments; i++)
 	{
-		float j = radius_ * cosf(theta) + position_.x;
-		float k = radius_ * sinf(theta) + position_.y;
+		float j = radius_ * cosf(theta) + _position.x;
+		float k = radius_ * sinf(theta) + _position.y;
 		
 		circleVertices_[i*2]	= j;
 		circleVertices_[i*2+1]	= k;
@@ -96,16 +96,17 @@
 }
 
 - (void)draw
-{		
+{
+    ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position | kCCVertexAttribFlag_Color );
 		// Default GL states: GL_TEXTURE_2D, GL_VERTEX_ARRAY, GL_COLOR_ARRAY, GL_TEXTURE_COORD_ARRAY
 		// Needed states: GL_VERTEX_ARRAY
 		// Unneeded states: GL_COLOR_ARRAY, GL_TEXTURE_2D, GL_TEXTURE_COORD_ARRAY
-	glDisableClientState(GL_TEXTURE_COORD_ARRAY);
-	glDisableClientState(GL_COLOR_ARRAY);
-	glDisable(GL_TEXTURE_2D);
+//	glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+//	glDisableClientState(GL_COLOR_ARRAY);
+//	glDisable(GL_TEXTURE_2D);
 	
-	glVertexPointer(2, GL_FLOAT, 0, circleVertices_);
-	glColor4f(color_.r/255.0f, color_.g/255.0f, color_.b/255.0f, opacity_/255.0f);
+//	glVertexPointer(2, GL_FLOAT, 0, circleVertices_);
+//	glColor4f(color_.r/255.0f, color_.g/255.0f, color_.b/255.0f, opacity_/255.0f);
 	
 	BOOL newBlend = NO;
 	if( blendFunc_.src != CC_BLEND_SRC || blendFunc_.dst != CC_BLEND_DST ) {
@@ -125,9 +126,9 @@
 		glBlendFunc(CC_BLEND_SRC, CC_BLEND_DST);
 	
 		// restore default GL state
-	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-	glEnableClientState(GL_COLOR_ARRAY);
-	glEnable(GL_TEXTURE_2D);
+//	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+//	glEnableClientState(GL_COLOR_ARRAY);
+//	glEnable(GL_TEXTURE_2D);
 }
 
 #pragma mark Protocols
@@ -155,7 +156,7 @@
 
 - (NSString*) description
 {
-	return [NSString stringWithFormat:@"<%@ = %08X | Tag = %i | Color = %02X%02X%02X%02X | Radius = %1.2f>", [self class], self, tag_, color_.r, color_.g, color_.b, opacity_, radius_];
+	return [NSString stringWithFormat:@"<%@ = %08X | Tag = %i | Color = %02X%02X%02X%02X | Radius = %1.2f>", [self class], self, _tag, color_.r, color_.g, color_.b, opacity_, radius_];
 }
 
 @end

@@ -59,7 +59,7 @@ deadRadius;
 		self.deadRadius = 0.0f;
 		
 		//Cocos node stuff
-		position_ = rect.origin;
+		_position = rect.origin;
 }
 	return self;
 }
