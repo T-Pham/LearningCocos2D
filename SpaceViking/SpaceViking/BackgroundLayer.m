@@ -19,8 +19,8 @@
         CCSprite *backgroundImage;
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
             backgroundImage = [CCSprite spriteWithFile:@"background.png"];
-            [backgroundImage setScaleX:2];
-            [backgroundImage setScaleY:2];
+            [backgroundImage setScaleX:[UIScreen mainScreen].scale];
+            [backgroundImage setScaleY:[UIScreen mainScreen].scale];
         } else {
             backgroundImage = [CCSprite spriteWithFile:@"backgroundiPhone.png"];
         }

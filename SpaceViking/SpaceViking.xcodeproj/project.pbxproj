@@ -1314,13 +1314,14 @@
 				GCC_PREFIX_HEADER = SpaceViking/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"SpaceViking/libs/kazmath/include\"";
 				INFOPLIST_FILE = SpaceViking/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1334,13 +1335,14 @@
 				GCC_PREFIX_HEADER = SpaceViking/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"SpaceViking/libs/kazmath/include\"";
 				INFOPLIST_FILE = SpaceViking/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1365,6 +1367,7 @@
 				9792B68317AF95C8007EEC41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
