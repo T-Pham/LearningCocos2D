@@ -16,7 +16,7 @@
         CGSize screenSize = [CCDirector sharedDirector].winSize;
         [self setTouchEnabled:YES];
         vikingSprite = [CCSprite spriteWithFile:@"sv_anim_1.png"];
-        [vikingSprite setPosition:CGPointMake(screenSize.width/2, screenSize.height*0.17f)];
+        [vikingSprite setPosition:CGPointMake(screenSize.width/2, screenSize.height*0.085f)];
         [self addChild:vikingSprite];
         if (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPad) {
             [vikingSprite setScaleX:screenSize.width/1024.0f];

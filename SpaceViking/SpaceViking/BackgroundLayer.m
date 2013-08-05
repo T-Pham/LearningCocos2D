@@ -14,14 +14,17 @@
 - (id)init {
     self = [super init];
     if (self) {
+        CGSize screenSize = [[CCDirector sharedDirector] winSize];
+
         CCSprite *backgroundImage;
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
             backgroundImage = [CCSprite spriteWithFile:@"background.png"];
+            [backgroundImage setScaleX:2];
+            [backgroundImage setScaleY:2];
         } else {
             backgroundImage = [CCSprite spriteWithFile:@"backgroundiPhone.png"];
         }
         
-        CGSize screenSize = [[CCDirector sharedDirector] winSize];
         [backgroundImage setPosition:CGPointMake(screenSize.width/2, screenSize.height/2)];
         
         [self addChild:backgroundImage z:0 tag:0];
